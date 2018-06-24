@@ -1,5 +1,10 @@
 package pikseltest.utils;
 
+/**
+ * models responseBody for payments method
+ * @author Antonio
+ *
+ */
 public class Payments {
 
 

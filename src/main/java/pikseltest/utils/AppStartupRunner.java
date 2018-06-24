@@ -19,6 +19,9 @@ public class AppStartupRunner implements ApplicationRunner {
 	
     public static int counter;
  
+    /**
+     * startup method to load database with episodes and studios
+     */
     @Override
     public void run(ApplicationArguments args) throws Exception {
         

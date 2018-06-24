@@ -1,5 +1,10 @@
 package pikseltest.utils;
 
+/**
+ * models responseBody for viewing method
+ * @author Antonio
+ *
+ */
 public class View {
 
 

@@ -27,7 +27,7 @@ public class Utils {
 
 	
 	/**
-	 * loads studios.json
+	 * loads studios.json to database
 	 */
 	public static List<Studio> loadStudios() {
 		
@@ -36,7 +36,6 @@ public class Utils {
 		try {
 			bStudios = Files.readAllBytes(Paths.get(JSON_PATH + "studios.json"));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -45,7 +44,6 @@ public class Utils {
 			sStudios = new String(bStudios,"UTF-8");
 			//System.out.print(sStudios);
 		} catch (UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}		
 			
@@ -86,7 +84,7 @@ public class Utils {
 	}
 	
 	/**
-	 * loads episodes.json
+	 * loads episodes.json to database
 	 */
 	public static List<Episode> loadEpisodes() {
 		
@@ -95,7 +93,6 @@ public class Utils {
 		try {
 			bEpisodes = Files.readAllBytes(Paths.get(JSON_PATH + "episodes.json"));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -104,7 +101,6 @@ public class Utils {
 			sEpisodes = new String(bEpisodes,"UTF-8");
 			//System.out.print(sEpisodes);
 		} catch (UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}		
 			
@@ -116,7 +112,11 @@ public class Utils {
 	}
 	
 	
-
+	/**
+	 * 
+	 * @param jsonString
+	 * @return
+	 */
 	private static List<Episode> getAllEpisodes(String jsonString) {        
 	    List<Episode> episodes = new java.util.ArrayList<Episode>();                               
 	        try {

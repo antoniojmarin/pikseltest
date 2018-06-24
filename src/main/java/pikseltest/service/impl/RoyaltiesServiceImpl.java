@@ -31,6 +31,9 @@ public class RoyaltiesServiceImpl implements RoyaltiesService {
 	}
 
 	
+	/**
+	 * Service method to add a view of an episode
+	 */
 	@Override
 	public HttpStatus viewing(View view) {
 		HttpStatus status = HttpStatus.ACCEPTED;
@@ -53,6 +56,9 @@ public class RoyaltiesServiceImpl implements RoyaltiesService {
 	}
 
 	
+	/**
+	 * Service method to get payments of studios
+	 */
 	@Override
 	public List<Payments> getPayments() {
 		List<Payments> paymentsList = new ArrayList<Payments>();
@@ -85,6 +91,9 @@ public class RoyaltiesServiceImpl implements RoyaltiesService {
 	}
 
 	
+	/**
+	 * Service method to get a rightsOwner payment
+	 */
 	@Override
 	public OwnerPayment getOwnerPayment(String rOwnerId) {
 		OwnerPayment ownerPayment = null;
