@@ -92,7 +92,7 @@ public class RoyaltiesController
 	 * Gets the payments for the studio recieved by paramenter
 	 * @param rOwnerId
 	 * @return
-	 */  // ajmarin - ver response body, poner etiqueta? 
+	 */
 	@RequestMapping(method = RequestMethod.GET, value = "/payments/{id}", produces = "application/json")
 	@ResponseBody
 	public ResponseEntity<Object> payment(@PathVariable(value = "id", required = true) String rOwnerId)
